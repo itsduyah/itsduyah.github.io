@@ -1,1 +1,1 @@
-# itsduyah.github.io
+itsduyah.github.io
