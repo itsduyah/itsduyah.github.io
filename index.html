@@ -670,9 +670,9 @@ body.menu-active {
   </div>
     <div class="avatar-actions">
       <button class="act-btn act-follow" id="followBtn" onclick="toggleFollow()">
-        <span id="followLabel"><i class="bi bi-person-add"></i> Theo dõi</span>
+        <span id="followLabel">+ Theo dõi</span>
       </button>
-      <button class="act-btn act-msg" onclick="openMsgModal()"><i class="bi bi-envelope-at"></i> Liên hệ</button>
+      <button class="act-btn act-msg" onclick="openMsgModal()">✎ Liên hệ</button>
     </div>
   </div>
 
@@ -825,7 +825,7 @@ function toggleFollow(){
   document.getElementById('followerDisp').textContent = fmt(followerRaw);
   if(following){
     btn.classList.add('following');
-    lbl.textContent = '<i class="bi bi-person-fill-add"></i> Đang theo dõi';
+    lbl.textContent = '✓ Đang theo dõi';
     showToast('🎉 Đã theo dõi Duy Anh', 'ok');
   } else {
     btn.classList.remove('following');
