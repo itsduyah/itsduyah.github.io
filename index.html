@@ -370,8 +370,16 @@ body.menu-active {
     to   { opacity:1; transform:scale(1) rotate(0deg); }
 }
 .name-tick svg {
-    width: 100%; height: 100%;
+    width: 100%; 
+    height: 100%;
     filter: drop-shadow(0 2px 8px rgba(24,119,242,0.85));
+    transform-origin: center; /* Đảm bảo xoay quanh tâm */
+    animation: spinTick 4s linear infinite; /* 4s là tốc độ xoay 1 vòng, có thể chỉnh lại */
+}
+/* Thêm keyframes này để tạo hiệu ứng xoay */
+@keyframes spinTick {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .handle {
